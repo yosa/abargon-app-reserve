@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h3>Descripción</h3>
-            <p>{{ $report->description }}</p>
+            <p>{!! str_replace(PHP_EOL, '</p><p>', $report->description) !!}</p>
         </div>
     </div>
     <div class="row">
@@ -38,7 +38,7 @@
                         <td>{{ $reservation->lastname }}</td>
                         <td>{{ $reservation->email }}</td>
                         <td>{{ $reservation->numberPeople }}</td>
-                        <td>{{ $reservation->createAt }}</td>
+                        <td>{{ $reservation->createdAt }}</td>
                     </tr>
                         @endforeach
                     @endif

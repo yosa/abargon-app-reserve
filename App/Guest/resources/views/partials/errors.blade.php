@@ -12,6 +12,4 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-large ">Ok</a>
         </div>
     </div>
-@endif
-
-    
+@endif    
