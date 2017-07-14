@@ -1,0 +1,15 @@
+{
+    "name": "Modificar evento",
+    "url": "/reserve.php/events/update/",
+    "description": "Módulo para modificar evento",
+    "task": {
+        "key": "task.reserve.events.update",
+        "name": "Acceso a modificar evento",
+        "description": "Permitir modificar evento",
+        "pattern": "update"
+    },
+    "event": {
+        "key": "event.reserve.events.update.success",
+        "description": "Evento modificado"
+    }
+}

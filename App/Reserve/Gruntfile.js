@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             src: 'resources/assets/',
             output: '../../public/<%= main.appName.toLowerCase() %>/',
             proyect: {
-                name: 'Melisa Reserve',
+                name: 'Abargon Reserve',
                 version: '1.0.0',
                 company: 'Melisa Company'
             }
@@ -17,7 +17,9 @@ module.exports = function(grunt) {
             },
             all: {
                 files: {
-//                    '<%= main.output %>css/app.css': '<%= main.src %>less/app.less'
+                    '<%= main.output %>css/events-add.css': '<%= main.src %>less/events-add.less',
+                    '<%= main.output %>css/events-report.css': '<%= main.src %>less/events-report.less',
+                    '<%= main.output %>css/site.css': '<%= main.src %>less/site.less'
                 }
             }
         },

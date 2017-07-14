@@ -1,0 +1,15 @@
+{
+    "name": "Eliminar evento",
+    "url": "/reserve.php/events/delete/",
+    "description": "Módulo para eliminar evento",
+    "task": {
+        "key": "task.reserve.events.delete",
+        "name": "Acceso a eliminar evento",
+        "description": "Permitir eliminar evento",
+        "pattern": "delete"
+    },
+    "event": {
+        "key": "event.reserve.events.delete.success",
+        "description": "Evento eliminado"
+    }
+}

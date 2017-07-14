@@ -1,0 +1,21 @@
+{
+    "name": "Agregar evento",
+    "url": "/reserve.php/modules/events/add",
+    "description": "Módulo interfaz para agregar events",
+    "nameSpace": "Abargon.reserve.view.desktop.events.add.Wrapper",
+    "task": {
+        "key": "task.reserve.events.add.access",
+        "name": "Acceso a agregar evento",
+        "description": "Permitir acceso a agregar evento",
+        "pattern": "access"
+    },
+    "option": {
+        "key": "option.reserve.events.add.access",
+        "name": "Opción para agregar evento",
+        "text": "Agregar evento"
+    },
+    "event": {
+        "key": "event.reserve.events.add.access",
+        "description": "Acceso al módulo agregar evento"
+    }
+}

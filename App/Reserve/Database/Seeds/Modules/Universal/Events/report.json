@@ -1,0 +1,15 @@
+{
+    "name": "Ver reporte de evento",
+    "url": "/reserve.php/events/report/",
+    "description": "Módulo para ver reporte de evento",
+    "task": {
+        "key": "task.reserve.events.report",
+        "name": "Acceso a ver reporte de evento",
+        "description": "Permitir ver reporte de evento",
+        "pattern": "read"
+    },
+    "event": {
+        "key": "event.reserve.events.report.success",
+        "description": "Acceso a reporte de evento"
+    }
+}

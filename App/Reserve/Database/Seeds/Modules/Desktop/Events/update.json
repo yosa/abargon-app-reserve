@@ -1,0 +1,21 @@
+{
+    "name": "Modificar evento",
+    "url": "/reserve.php/modules/events/update/",
+    "description": "Módulo interfaz para modificar evento",
+    "nameSpace": "Abargon.reserve.view.desktop.events.update.Wrapper",
+    "task": {
+        "key": "task.reserve.events.update.access",
+        "name": "Acceso a modificar evento",
+        "description": "Permitir acceso a modificar evento",
+        "pattern": "access"
+    },
+    "option": {
+        "key": "option.reserve.events.update.access",
+        "name": "Opción para modificar evento",
+        "text": "Modificar evento"
+    },
+    "event": {
+        "key": "event.reserve.events.update.access",
+        "description": "Acceso al módulo modificar evento"
+    }
+}

@@ -3,6 +3,7 @@
 namespace App\Reserve\Database\Seeds;
 
 use Melisa\Laravel\Database\InstallSeeder;
+use App\Reserve\Models\Events;
 
 /**
  * 
@@ -14,9 +15,8 @@ class FakerSeeder extends InstallSeeder
     
     public function run()
     {
-        
-        //$this->call(Faker\ClientesDomiciliosSeeder::class);
-        
+        dd($this->factory(Events::class));
+        $this->call(Faker\EventsSeeder::class);        
     }
     
 }

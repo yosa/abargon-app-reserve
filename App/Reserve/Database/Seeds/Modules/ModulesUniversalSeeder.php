@@ -2,21 +2,34 @@
 
 namespace App\Reserve\Database\Seeds\Modules;
 
-use Illuminate\Database\Seeder;
+use Melisa\Laravel\Database\InstallSeeder;
 
 /**
  * 
  *
  * @author Luis Josafat Heredia Contreras
  */
-class ModulesUniversalSeeder extends Seeder
+class ModulesUniversalSeeder extends InstallSeeder
 {
     
     public function run()
     {
-        
-        //$this->call(Universal\Seeder::class);
-        
+        $this->events();
+    }
+    
+    public function events()
+    {
+        $this->installModuleJson('Universal/Events', [
+            'create',
+            'paging',
+            'report',
+            'update',
+            'delete',
+        ]);
+        $this->installAssetCss('app.reserve.events.report', [
+            'name'=>'CSS module events report',
+            'path'=>'/reserve/css/events-report.css'
+        ]);
     }
     
 }

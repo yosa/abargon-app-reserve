@@ -1,0 +1,11 @@
+{
+    "name": "Paginar lista de evento",
+    "url": "/reserve.php/events/",
+    "description": "Módulo para paginar lista de evento",
+    "task": {
+        "key": "task.reserve.events.paging",
+        "name": "Paginar lista de evento",
+        "description": "Permitir paginar lista de evento",
+        "pattern": "read"
+    }
+}

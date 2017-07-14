@@ -18,7 +18,7 @@ class ApplicationSeeder extends InstallSeeder
         $this->installApplication('reserve', [
             'name'=>'Reserve',
             'description'=>'Application Reserve',
-            'nameSpace'=>'Melisa.reserve',
+            'nameSpace'=>'Abargon.reserve',
             'typeSecurity'=>'art',
             'version'=>'1.0.0'
         ]);
