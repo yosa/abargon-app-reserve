@@ -19,7 +19,7 @@ class UpdateRequest extends CreateRequest
     public function rules()
     {        
         $rules = parent::rules();
-        $rules ['id']= 'bail|required|max:36|xss|exists:insurance.banks,id';        
+        $rules ['id']= 'bail|required|max:36|xss|exists:reserve.events,id';        
         return $rules;        
     }
     

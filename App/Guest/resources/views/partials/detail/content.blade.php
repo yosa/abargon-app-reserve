@@ -5,10 +5,10 @@
     <div class="col l4">
         <ul>
             <li>
-                <b>Fecha inicio: </b> {{ $event->startDate->format('Y-m-d') }}
+                <b>Fecha inicio: </b> {{ $event->startDate }}
             </li>
             <li>
-                <b>Fecha fin: </b> {{ $event->endDate->format('Y-m-d') }}
+                <b>Fecha fin: </b> {{ $event->endDate }}
             </li>
             <li>
                 <b>Lugares disponibles: </b> {{ $event->maximumCapacity - $event->totalReservations }}

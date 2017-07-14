@@ -87,7 +87,7 @@ class CreateLogic
     
     public function autoFinishEvent($event)
     {
-        if( Carbon::now()->gte($event->endDate)) {
+        if( Carbon::now()->gte(Carbon::createFromDate(strtotime($event->endDate)))) {
             return true;
         }
         
@@ -104,7 +104,7 @@ class CreateLogic
     
     public function isValid($event, $input)
     {
-        if( Carbon::now()->gt($event->endDate)) {
+        if( Carbon::now()->gt(Carbon::createFromDate(strtotime($event->endDate)))) {
             return $this->error('El evento ya a finalizado');
         }        
         

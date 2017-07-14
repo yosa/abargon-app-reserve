@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Reserve\Modules\Desktop\Banks;
+namespace App\Reserve\Modules\Desktop\Events;
 
 use App\Core\Logics\Modules\Outbuildings;
 
@@ -23,12 +23,14 @@ class UpdateModule extends Outbuildings
                 'modules'=>[
                     'submit'=>$this->module('task.reserve.events.update'),
                     'report'=>$this->module('task.reserve.events.report'),
+                    'filesSelect'=>$this->module('task.drive.files.select.access', false),
                 ],
                 'wrapper'=>[
                     'title'=>'Modificar evento'
                 ],
                 'i18n'=>[
-                    'success'=>'Evento modificado'
+                    'success'=>'Evento modificado',
+                    'btnSave'=>'Modificar evento',
                 ]
             ]
         ];        

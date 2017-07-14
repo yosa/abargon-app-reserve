@@ -81,11 +81,12 @@ Ext.define('Abargon.reserve.view.desktop.events.view.Grid', {
                 xtype: 'button',
                 iconCls: 'x-fa fa-pencil',
                 tooltip: 'Modificar evento',
-                handler: 'onClickBtnUpdate',
                 bind: {
-                    melisa: 'a'
+                    melisa: '{modules.update}',
+                    hidden: '{!modules.update.allowed}'
                 },
                 listeners: {
+                    click: 'moduleRun',
                     loaded: 'onLoadedModuleUpdate'
                 }
             }

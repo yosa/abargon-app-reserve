@@ -3,14 +3,20 @@ Ext.define('Abargon.reserve.view.desktop.events.add.Form', {
     alias: 'widget.reserveEventsAddForm',
     
     scrollable: true,
+    layout: {
+        type: 'vbox',
+        align: 'stretch'
+    },
     defaults: {
-        allowBlank: false,
-        anchor: '100%'
+        allowBlank: false
     },
     items: [
         {
             xtype: 'fieldcontainer',
             layout: 'hbox',
+            defaults: {
+                allowBlank: false
+            },
             items: [
                 {
                     xtype: 'textfield',
@@ -36,6 +42,7 @@ Ext.define('Abargon.reserve.view.desktop.events.add.Form', {
             title: 'Fecha',
             defaults: {
                 xtype: 'datefield',
+                allowBlank: false,
                 flex: 1
             },
             items: [
@@ -53,6 +60,9 @@ Ext.define('Abargon.reserve.view.desktop.events.add.Form', {
         {
             xtype: 'fieldcontainer',
             layout: 'hbox',
+            defaults: {
+                allowBlank: false
+            },
             items: [
                 {
                     xtype: 'textfield',
@@ -84,7 +94,8 @@ Ext.define('Abargon.reserve.view.desktop.events.add.Form', {
         {
             xtype: 'textarea',
             name: 'description',
-            fieldLabel: 'Descripción'
+            fieldLabel: 'Descripción',
+            flex: 1
         }
     ]
 });

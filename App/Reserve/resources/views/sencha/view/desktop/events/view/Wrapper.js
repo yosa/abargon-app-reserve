@@ -24,7 +24,7 @@ Ext.define('Abargon.reserve.view.desktop.events.view.Wrapper', {
             region: 'center',
             listeners: {
                 itemdblclick: 'onShowItemReport',
-                selectionchange: 'onSelectionChangeInsuranceApplications'
+//                selectionchange: 'onSelectionChangeInsuranceApplications'
             }
         }
     ]

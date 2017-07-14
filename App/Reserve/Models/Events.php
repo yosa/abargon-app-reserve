@@ -8,10 +8,6 @@ namespace App\Reserve\Models;
  */
 class Events extends EventsAbstract
 {
-    protected $dates = [
-        'startDate',
-        'endDate',
-    ];
     
     public function reservations()
     {

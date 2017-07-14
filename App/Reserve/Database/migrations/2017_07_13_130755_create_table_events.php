@@ -18,8 +18,8 @@ class CreateTableEvents extends Migration
             $table->char('idIdentityCreated', 36);
             $table->string('name')->unique();
             $table->text('description');
-            $table->dateTime('startDate');
-            $table->dateTime('endDate');
+            $table->date('startDate');
+            $table->date('endDate');
             /* destacado */
             $table->boolean('outstanding')->default(0);
             $table->boolean('finalized')->default(0);
